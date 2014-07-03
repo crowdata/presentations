@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Vozdata: Open data with the help of the community</title>
+
+		<meta name="description" content="Vozdata: Open data with the help of the community">
+		<meta name="author" content="Gabriela Rodríguez">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Vozdata</h1>
+					<h3>Open data with the help of the community</h3>
+					<p>
+						<small>Created by <a href="http://gaba.stayover.org">Gabriela Rodríguez</a> / <a href="http://twitter.com/gaba">@gaba</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>user case</h2>
+					<h3>senate expending</h3>
+					<a  href="http://www.documentcloud.org/documents/956939-dgc-1589-2012.html#document/p1">
+						<img width="30%" height="350" src="images/pdf-gastos-del-senado.png" alt="scanned pdf" style="float: right">
+					</a>
+					<p>
+						We need the data from scanned images from the senate expendings in the last 5 years.
+						<ul style="width: 60%;">
+							<li>too dirty for OCR</li>
+							<li>too important for mechanical turk</li>
+							<li>something that our Community cares about</li>
+						</ul>
+					</p>
+
+					<aside class="notes">
+						VozData is not only this project but a platform in La Nacion that will ask the help of the community to extract information from PDFs or images that are hard to process.
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Platforms</h2>
+						<h3>inspirations</h3>
+						<p>
+							Other newsrooms asked their community for help with releasing data from PDFs or images.
+						</p>
+					</section>
+					<section>
+						<h2>The Guardian</h2>
+						<h3>MP's expenses</h3>
+						<p><a href="http://www.theguardian.com/news/datablog/2009/jun/18/mps-expenses-houseofcommons">Data collection in 2009</a> from four years of expenses and claims from scanned PDFs.</p>
+						<aside class="notes">
+							They opened up this data to as many people as possible. They asked for help analysing it and find the great stories buried within the photocopied handwritten receipts.
+
+Using their system the people were able to find their MP - or any member, for that matter - and look at their records directly. For every page for every MP the community was able to:
+
+• comment on individual expenses
+• highlight ones of interest
+• tell us how interesting that receipt is
+• Help by entering the numbers on the page
+						</aside>
+					</section>
+					<section>
+						<h2>Pro-Publica</h2>
+						<h3>free the files</h3>
+						<p>Reveal outside spending in the 2012 US elections from political ad files in 2012.</p>
+						<aside class="notes">Crowdata is quite similar to 'free the files' but with the added bonus of being configurable for multiple projects by the journalists that don't code.</aside>
+					</section>
+					<section>
+						<h2>Other features we need</h2>
+						<ul>
+							<li>each project configurable by the journalist without needing to code</li>
+							<li>a ranking for the users on amount of documents checked</li>
+							<li>a way to search in the same project (To Do)</li>
+						</ul>
+						<aside class="notes">
+							The data that needs to be extracted have to be configured by the journalist and not a programmer.
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>CrowData</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>CrowData</h2>
+						<h3>how to use it</h3>
+					</section>
+
+					<section>
+						<h2>Django Admin Power</h2>
+						<h3>administration staff</h3>
+						<ul>
+							<li>Create projects and upload documents<li>
+							<li>For each project, configure the fields that needs to be extracted</li>
+							<li>Administer the users<li>
+							<li>Download data<li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Checking documents</h2>
+						<h3>volunteers</h3>
+						<ul>
+							<li>Registration required</li>
+							<li>Get a document's link</li>
+						</ul>
+					</section>
+
+					<section>
+					<h2></h2>
+					</section>
+				</section>
+
+				<section>
+					<h2>CrowData</h2>
+					<h3>how to install it</h3>
+					<p>
+						Django application with postgresql database
+					</p>
+				</section>
+
+				<section>
+					<h2>Questions & Comments</h2>
+					<p>
+					</p>
+					<blockquote cite="http://en.wikipedia.org/wiki/No_such_thing_as_a_stupid_question">
+						&ldquo;There are naive questions, tedious questions, ill-phrased questions, questions put after inadequate self-criticism. But every question is a cry to understand the world. There is no such thing as a dumb question.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Gabriela Rodríguez / gaba.stayover.org</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
