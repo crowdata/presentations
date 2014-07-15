@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Vozdata: Open data with the help of the community</title>
+		<title>Crowdata: Open data with the help of the community</title>
 
 		<meta name="description" content="Vozdata: Open data with the help of the community">
 		<meta name="author" content="Gabriela Rodríguez">
@@ -43,7 +43,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Vozdata</h1>
+					<h1>Crowdata</h1>
 					<h3>Open data with the help of the community</h3>
 					<p>
 						<small>Created by <a href="http://gaba.stayover.org">Gabriela Rodríguez</a> / <a href="http://twitter.com/gaba">@gaba</a></small>
@@ -52,27 +52,26 @@
 						<small>Knight-Mozilla Open News Fellow at La Nacion, Argentina</small>
 					</p>
 					<aside class="notes">
-						This is a project that La Nacion already started and I helped finishing it.
+						fellow at La nacion in argentina.
+						this is a project i have been working at the newsroom to ensure transparency in the government and convert information from pdfs to something journalists can process and use
 					</aside>
 				</section>
 
 				<section>
 					<h2>The Problem</h2>
-					<h3>senate spendings</h3>
+					<h3>senate expenses</h3>
 					<a  href="http://www.documentcloud.org/documents/956939-dgc-1589-2012.html#document/p1">
-						<img width="30%" height="350" src="images/pdf-gastos-del-senado.png" alt="scanned pdf" style="float: right">
+						<img width="30%" height="350" src="images/pdf-gastos-del-senado.png" alt="scanned pdf" style="float: right; padding: 15px;">
 					</a>
-					<p>
-						We received the senate spendings in the last 5 years as scanned images. We need the data in other format to process.
-					</p>
+					<p>5 years of documents as scanned images</p>
 					<ul style="width: 60%;">
 							<li>too dirty for OCR</li>
-							<li>too important for mechanical turk</li>
-							<li>information that our Community cares about</li>
+							<li>information that our community cares about</li>
 					</ul>
 
 					<aside class="notes">
-						VozData is not only resolves this problem but also create a platform in La Nacion that will ask the help of the community to extract information from PDFs or images that are hard to process.
+						We needed the data in good format to process it.
+						VozData does not only resolves this problem but also create a platform at La Nacion that will ask the help of the community to extract information from PDFs or images that are hard to process.
 					</aside>
 				</section>
 
@@ -82,34 +81,42 @@
 						<h2>Platforms</h2>
 						<h3>inspirations</h3>
 						<p>
-							Other newsrooms asked their community for help with releasing data from PDFs or images.
+							Other newsrooms have asked their communities for help with releasing data from PDFs or images before.
 						</p>
+						<aside class="notes">This is something others newsrooms have been doing before and worked as inspiration to do a similar project in Argentina.</aside>
 					</section>
 					<section>
 						<h2>The Guardian</h2>
 						<h3>MP's expenses</h3>
 						<p><a href="http://www.theguardian.com/news/datablog/2009/jun/18/mps-expenses-houseofcommons">Data collection in 2009</a> from four years of expenses and claims from scanned PDFs.</p>
 						<aside class="notes">
+							the House of Commons has released thousands of MPs' receipts - 700,000 individual documents contained within 5,500 PDF files covering all 646 members of parliament.
 							They opened up this data to as many people as possible. They asked for help analysing it and find the great stories buried within the photocopied handwritten receipts.
 
 Using their system the people were able to find their MP - or any member, for that matter - and look at their records directly. For every page for every MP the community was able to:
 
 • comment on individual expenses
 • highlight ones of interest
-• tell us how interesting that receipt is
+• tell them how interesting that receipt is
 • Help by entering the numbers on the page
 						</aside>
 					</section>
 					<section>
 						<h2>Pro-Publica</h2>
 						<h3>free the files</h3>
-						<p>Reveal outside spending in the 2012 US elections from political ad files.</p>
-						<aside class="notes">Crowdata is quite similar to 'free the files' but with the added bonus of being configurable for multiple projects by the journalists that don't code.</aside>
+						<p>Reveal outside spending in the 2012 US elections from political ad filings from television stations in swing markets.</p>
+						<aside class="notes">
+							In the US, TV stations mantain a political file of political ad requests and contracts. It means they log who is requesting or contract advertisement for political campaigns. Pro-publica got the files from 4 TV stations.
+
+Their goal was to increase transparency around these filings by sorting and annotating them with key data, making it easier to identify the groups buying these political ads.
+
+						Crowdata is quite similar to 'free the files' but with the added bonus of being configurable for multiple projects by the journalists that don't code.
+						</aside>
 					</section>
 					<section>
-						<h2>Other features we need</h2>
+						<h2>Other features we needed</h2>
 						<ul>
-							<li>each project configurable by the journalist without needing to code</li>
+							<li>reusable code without needing custom code for each project</li>
 							<li>a ranking for the users on amount of documents checked</li>
 							<li>a way to search in the same project (To Do)</li>
 						</ul>
@@ -121,9 +128,8 @@ Using their system the people were able to find their MP - or any member, for th
 
 				<section>
 					<h2>CrowData</h2>
-					<p>
-
-					</p>
+					<p>Code at <a href="http://github.com/crowdata/crowdata">http://github.com/crowdata/crowdata</a></p>
+				  <p>Vozdata at <a href="http://vozdata.lanacion.com.ar">http://vozdata.lanacion.com.ar</a></p>
 				</section>
 
 				<section>
@@ -133,38 +139,40 @@ Using their system the people were able to find their MP - or any member, for th
 					</section>
 
 					<section>
-						<h2>Django Admin Power</h2>
-						<h3>administration staff</h3>
+						<h2>Django</h2>
+						<h3>administration features</h3>
 						<ul>
 							<li>Create projects and upload documents</li>
 							<li>For each project, configure the fields that needs to be extracted</li>
-							<li>Administer the users</li>
 							<li>Download data</li>
 						</ul>
-					</section>
-
-					<section>
-						<h2>Checking documents</h2>
-						<h3>volunteers</h3>
-						<ul>
-							<li>Registration required</li>
-							<li>Get a document's link</li>
-						</ul>
+						<aside class="notes">
+							Used github for the development
+							Download and install as any django application
+							Run locally
+							We we used postgresql (trigram search)
+						</aside>
 					</section>
 				</section>
 
 				<section>
-					<h2>CrowData</h2>
-					<h3>how to install it</h3>
+					<h2>Development</h2>
 					<p>
-						Django application with postgresql database
+						In the newsroom, with journalists at La Nacion Data.
 					</p>
-					<aside class="notes">
-						Used github for the development
-						Download and install as any django application
-						Run locally
-						We we used postgresql (trigram search)
-					</aside>
+					<p>
+						<a href="http://www.github.com/crowdata">http://www.github.com/crowdata</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Media Party - August 27th to 30th - Buenos Aires, Argentina</h2>
+					<p>
+						Come join us!
+					</p>
+					<p>
+						<a href="http://www.mediaparty.info">http://www.mediaparty.info</a>
+					</p>
 				</section>
 
 				<section>
